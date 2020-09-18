@@ -1,0 +1,9 @@
+[submodule "miner-updater"]
+	path = miner-updater
+	url = https://github.com/Wheaties466/helium_miner_scripts
+[submodule "lora_gateway"]
+	path = lora_gateway
+	url = https://github.com/Lora-net/lora_gateway
+[submodule "packet_forwarder"]
+	path = packet_forwarder
+	url = https://github.com/Lora-net/packet_forwarder

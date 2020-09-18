@@ -1,0 +1,18 @@
+[Unit]
+Description=LoRa Packet Forwarder
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/packet_forwarder/lora_pkt_fwd
+ExecStartPre=/home/pi/lora_gateway/reset_lgw.sh start 17
+ExecStart=/home/pi/packet_forwarder/lora_pkt_fwd/lora_pkt_fwd -c /home/pi/packet_forwarder/lora_pkt_fwd/global_conf.json
+Restart=always
+RestartSec=30
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=lora_pkt_fwd
+
+[Install]
+WantedBy=multi-user.target
