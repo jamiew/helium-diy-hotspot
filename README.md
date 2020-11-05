@@ -1,6 +1,10 @@
+**DEPRECATED**
+
+**This repository is not actively maintained and is provided as reference only.** For a more active project please try [Wheaties466/helium_miner_scripts](https://github.com/Wheaties466/helium_miner_scripts)
+
+
 helium-diy-hotspot
 ==================
-
 
 Some setup and update scripts for a DIY Helium hotspot based
 on the RAK2244 Pilot Gateway -- which uses the sx1301 chip
